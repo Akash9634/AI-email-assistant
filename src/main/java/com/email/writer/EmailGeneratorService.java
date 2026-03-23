@@ -15,6 +15,7 @@ public class EmailGeneratorService {
     private final WebClient webClient;
     private final String apiKey;
 
+    //calling gemini API for email generation
     public EmailGeneratorService(WebClient.Builder webClientBuilder,
                                  @Value("${gemini.api.url}") String baseUrl,
                                  @Value("${gemini.api.key}") String geminiApiKey){
